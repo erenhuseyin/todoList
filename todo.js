@@ -8,7 +8,7 @@ let clearToDo = document.getElementById("clearToDo")
 addToDoButton.addEventListener("click", function () {
   let paragraph = document.createElement("p"); //p elementi oluşturma
   paragraph.classList.add("paragraph"); //paragrapha style eklemek
-  toDoContainer.appendChild(paragraph);
+  toDoContainer.appendChild(paragraph);//oluşturulan p elemanını ekleme
   paragraph.innerHTML = inputText.value; //inputText değerini paragraph içerisine ata
   inputText.value = ""; //en sonda inputText içerisini boşaltma
 
@@ -17,7 +17,7 @@ addToDoButton.addEventListener("click", function () {
   });
 
   paragraph.addEventListener("dblclick", function () { //paragrafa çift tıklandığında
-    toDoContainer.removeChild(paragraph);
+    toDoContainer.removeChild(paragraph);//p elemanlarını silme
   });
 
   clearToDo.addEventListener("click", function(){ //sil tuşuna basma
